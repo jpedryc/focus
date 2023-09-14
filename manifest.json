@@ -1,18 +1,51 @@
 {
-    "manifest_version": 2,
-    "name": "Focus",
+    "manifest_version": 3,
+    "name": "Focus Nazar",
     "version": "1.0.0",
-
-    "description": "Adds a red border to all webpages matching mozilla.org.",
-
+    "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
     "icons": {
-        "48": "icons/border-48.png"
+        "32": "icons/nazar-32.png",
+        "48": "icons/nazar-48.png",
+        "96": "icons/nazar-96.png"
     },
 
-    "content_scripts": [
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "alarms",
+        "scripting",
+        "webNavigation"
+    ],
+
+    "host_permissions": [
+        "<all_urls>"
+    ],
+
+    "action": {
+        "default_icon": {
+            "32": "icons/nazar-32.png",
+            "48": "icons/nazar-48.png",
+            "96": "icons/nazar-96.png"
+        },
+        "default_title": "Focus Nazar",
+        "default_popup": "popup/index.html"
+    },
+
+    "background": {
+        "service_worker": "background_scripts/background.js"
+    },
+
+    "web_accessible_resources": [
         {
-            "matches": ["*://*.mozilla.org/*"],
-            "js": ["focus.js"]
+            "resources": [
+                "popup/assets/img/logo.png",
+                "content_scripts/assets/html/blocked.html"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
         }
     ]
 }

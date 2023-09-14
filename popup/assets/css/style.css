@@ -1,0 +1,73 @@
+html,
+body {
+    width: 520px;
+    font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    background-color: #efefef;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab span {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 8px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab span:hover {
+    background-color: #dbdbdb;
+}
+
+/* Create an active/current tablink class */
+.tab span.active {
+    background-color: #dbdbdb;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+}
+
+button, select, input {
+    padding: 4px 8px;
+    margin: 0;
+    width: 100%;
+}
+
+button.remove-btn {
+    background-color: #b94a4a;
+    color: white;
+}
+
+button.remove-btn:hover {
+    background-color: #e15b5b;
+    color: white;
+}
+
+button.add-btn {
+    background-color: #628f1e;
+    color: white;
+    padding: 10px 8px;
+}
+
+button.add-btn:hover {
+    background-color: #89c926;
+    color: white;
+    padding: 10px 8px;
+}

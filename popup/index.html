@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Focus Nazar</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/light.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+<div style="width:500px;">
+    <!-- Header -->
+    <div style="width:500px;">
+        <img src="assets/img/logo.png" alt="Logo" style="float:left;margin-right:10px;"/>
+        <h1>Focus Nazar</h1>
+        <p style="margin-top:-10px;">
+            "A naẓar (from Arabic ‏نَظَر‎ [ˈnaðˤar], meaning 'sight', 'surveillance', 'attention', and other related concepts) is an eye-shaped amulet believed to protect against the evil eye." - <a href="https://en.wikipedia.org/wiki/Nazar_(amulet)" title="Nazar Amulet">wikipedia.org</a>
+        </p>
+    </div>
+
+    <!-- Error message -->
+    <div id="error-box" style="color:red;background-color:#fee;padding:10px 5px;display:none;">
+        💀 Error message
+    </div>
+
+    <!-- Rule generator -->
+    <details style="margin-top: 20px;">
+        <summary style="cursor:pointer;color:green;">
+            <strong>Add new entry</strong>
+        </summary>
+        <div style="margin-top:12px;">
+
+            <div style="display:flex;flex-wrap:wrap;">
+                <div style="width: 50%;">
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <span class="tablinks" id="predefined-rules-tab">Predefined</span>
+                        <span class="tablinks" id="custom-rules-tab">Custom</span>
+                    </div>
+
+                    <!-- Tab content -->
+                    <div id="predefined-rules-tab-content" class="tabcontent">
+                        <div>
+                            <label for="predefined-select">Choose service</label>
+                            <select id="predefined-select" style="width:226px;">
+                                <option value="youtube">YouTube</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="reddit">Reddit</option>
+                                <option value="ninegag">9GAG</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="custom-rules-tab-content" class="tabcontent">
+                        <div>
+                            <label for="custom-domain">Domain</label>
+                            <input id="custom-domain" type="text" name="domain" style="width:210px;" />
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-left:20px;width:200px;">
+                    <div>
+                        <label for="time">Block after</label>
+                        <select id="time">
+                            <option value="0">Always</option>
+                            <option value="5">5s</option>
+                            <option value="300">5 min</option>
+                            <option value="600">10 min</option>
+                            <option value="900">15 min</option>
+                            <option value="1800">30 min</option>
+                            <option value="3600">1h</option>
+                            <option value="7200">2h</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 10px;font-size: 1rem;">
+                        <button id="add-rule-btn" class="add-btn" type="button">Add new entry</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </details>
+
+    <hr style="border-top: 5px dotted #efefef;margin-top:20px;" />
+
+    <!-- Rules -->
+    <table style="margin-top:20px;">
+        <thead>
+        <tr>
+            <th>Domain</th>
+            <th>Time left</th>
+            <th>Daily allowance</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="rules-table-body">
+<!--        <tr>-->
+<!--            <td>abcd</td>-->
+<!--            <td>10</td>-->
+<!--&lt;!&ndash;            <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <span>Remove</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>efgh</td>-->
+<!--            <td>20</td>-->
+<!--&lt;!&ndash;            <td>&ndash;&gt;-->
+<!--&lt;!&ndash;                <span>Remove</span>&ndash;&gt;-->
+<!--&lt;!&ndash;            </td>&ndash;&gt;-->
+<!--        </tr>-->
+        </tbody>
+    </table>
+
+<!--    <div style="margin-top: 30px;">-->
+<!--        <button id="clear-rules-btn" class="remove-btn" type="button">Remove all rules</button>-->
+<!--    </div>-->
+</div>
+<div id="error-content" class="hidden">
+    <p>Can't handle this web page.</p>
+    <p>Try a different page.</p>
+</div>
+<script src="assets/js/error-box.js"></script>
+<script src="assets/js/tabs.js"></script>
+<script src="../global_scripts/storage.js"></script>
+<script src="assets/js/rules.js"></script>
+<script src="assets/js/rule-creator.js"></script>
+</body>
+</html>
