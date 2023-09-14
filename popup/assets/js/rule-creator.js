@@ -9,6 +9,9 @@ const predefinedRules = {
     twitter: 'twitter.com',
     reddit: 'reddit.com',
     ninegag: '9gag.com',
+    amazon: 'amazon.com',
+    instagram: 'instagram.com',
+    tiktok: 'tiktok.com',
 }
 
 const timeInput = document.getElementById('time');
