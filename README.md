@@ -19,9 +19,9 @@
     You can choose you most "focus disrupting" services and <strong>limit their daily intake time</strong> or <strong>blocking them
     altogether</strong>.
 </p>
-<div style="display: flex; margin-top: 30px;">
-    <img src="docs/extension_main.png" alt="Extension Overview" style="margin: 0 auto; border: 1px solid #ccc;" />
-</div>
+<center>
+<img src="docs/extension_main.png" alt="Extension Overview" style="margin: 0 auto; border: 1px solid #ccc;" />
+</center>
 <h1 style="margin-top: 60px;">Guides</h1>
 <div style="display: flex; gap: 2em;">
     <div>
@@ -32,7 +32,9 @@
             <li>Define daily limit or block altogether</li>
             <li style="color: #689112">Add new entry!</li>
         </ol>
-        <img src="docs/extension_predefined.png" alt="Adding predefined domain" />
+<center>
+<img src="docs/extension_predefined.png" alt="Adding predefined domain" />
+</center>
     </div>
     <div>
         <h5>Adding custom domain</h5>
@@ -42,7 +44,9 @@
             <li>Define daily limit or block altogether</li>
             <li style="color: #689112">Add new entry!</li>
         </ol>
-        <img src="docs/extension_custom.png" alt="Adding custom domain" />
+<center>
+<img src="docs/extension_custom.png" alt="Adding custom domain" />
+</center>
     </div>
 </div>
 
