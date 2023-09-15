@@ -6,6 +6,10 @@
     <img src="docs/chrome.png" alt="Chrome Web Store Logo" height="16px" style="float: left; margin-right: 5px; margin-top: 2px;" />
     <a href="#" title="GitHub Repository">Chrome Web Store</a>
 </div>
+<div style="margin-left: auto;">
+    <img src="docs/github-mark.png" alt="Extension Page" height="16px" style="float: left; margin-right: 5px; margin-top: 2px;" />
+    <a href="https://jpedryc.github.io/focus/" title="GitHub Page">Homepage</a>
+</div>
 </div>
 <p style="font-size: 0.9em;">
     "A naẓar (from Arabic ‏نَظَر‎ [ˈnaðˤar], meaning 'sight', 'surveillance', 'attention', and other related
