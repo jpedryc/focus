@@ -11,6 +11,8 @@
     <a href="https://jpedryc.github.io/focus/" title="GitHub Page">Homepage</a>
 </div>
 </div>
+<br/>
+<br/>
 <p style="font-size: 0.9em; margin-top: 30px;">
     "A naẓar (from Arabic ‏نَظَر‎ [ˈnaðˤar], meaning 'sight', 'surveillance', 'attention', and other related
     concepts) is an eye-shaped amulet believed to protect against the evil eye." - <a
