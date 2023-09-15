@@ -1,12 +1,11 @@
 <div style="display: flex;">
-    <div style="width: 50%;">
-        <img src="docs/nazar-48.png" alt="Logo" style="float:left;margin-right:10px;"/>
-        <h1>Focus Nazar</h1>
-    </div>
-    <div style="margin-left: 15px;">
-        <img src="docs/chrome.png" alt="Chrome Web Store Logo" height="16px" style="float: left; margin-right: 5px; margin-top: 2px;" />
-        <a href="#" title="GitHub Repository">Chrome Web Store</a>
-    </div>
+<h1>
+<img src="docs/nazar-48.png" alt="Logo" height="35px" style="float:left;margin-right:10px;"/> Focus Nazar
+</h1>
+<div style="margin-left: auto;">
+    <img src="docs/chrome.png" alt="Chrome Web Store Logo" height="16px" style="float: left; margin-right: 5px; margin-top: 2px;" />
+    <a href="#" title="GitHub Repository">Chrome Web Store</a>
+</div>
 </div>
 <p style="font-size: 0.9em;">
     "A naẓar (from Arabic ‏نَظَر‎ [ˈnaðˤar], meaning 'sight', 'surveillance', 'attention', and other related
