@@ -19,7 +19,7 @@
     href="https://en.wikipedia.org/wiki/Nazar_(amulet)" title="Nazar Amulet" target="_blank">wikipedia.org</a>
 </p>
 <h2 style="width: 500px; margin: 30px auto 0 auto; padding: 20px; border: 4px solid #ccc; text-align: center;">
-    Focus Nazar is a Chrome Extension designed to manage your focus.
+    Focus Nazar is a simple, lightweight Chrome Extension designed to manage your focus.
 </h2>
 <p style="width: 500px; margin: 20px auto 0 auto; text-align: center;">
     You can choose you most "focus disrupting" services and <strong>limit their daily intake time</strong> or <strong>blocking them
