@@ -87,18 +87,6 @@ chrome.storage.local.onChanged.addListener(async () => {
     await refreshRulesTable();
 });
 
-// const clearAllRulesBtn = document.getElementById('clear-rules-btn');
-
-// async function clearAllRules() {
-//     await chrome.storage.local.clear();
-//     await refreshRulesTable();
-// }
-
-// clearAllRulesBtn.addEventListener('click', async function () {
-//     hideError();
-//     await clearAllRules();
-// });
-
 const clearRule = async (domain) => {
     let ruleItemsObj = await chrome.storage.local.get('ruleItems');
 
@@ -119,5 +107,5 @@ const clearRule = async (domain) => {
     });
 
     await refreshRulesTable();
-    await chrome.runtime.sendMessage({action: 'ruleRemoved'});
+    await chrome.runtime.sendMessage({action: 'ruleRemoved', domain});
 };

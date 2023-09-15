@@ -90,7 +90,13 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
     if (request.action === 'ruleAdded' || request.action === 'ruleRemoved') {
         const tab = await getCurrentTab();
         await restartAlarm(tab.id);
-        await chrome.tabs.reload(tab.id);
+
+        let domain = (new URL(tab.url));
+        domain = domain.hostname.replace('www.', '');
+
+        if (request.domain === domain) {
+            await chrome.tabs.reload(tab.id);
+        }
     }
 });
 
