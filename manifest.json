@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Focus Nazar",
-    "version": "1.0.0",
-    "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+    "version": "0.0.1",
+    "description": "Focus Nazar is a Chrome Extension designed to manage your focus.",
     "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
     "icons": {
         "32": "icons/nazar-32.png",
