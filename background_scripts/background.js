@@ -105,7 +105,10 @@ chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
  */
 (async () => {
     let currentTab = await getCurrentTab();
-    restartAlarm(currentTab.id);
+
+    if (currentTab !== undefined) {
+        restartAlarm(currentTab.id);
+    }
 })();
 
 chrome.webNavigation.onCommitted.addListener(async (details) => {
