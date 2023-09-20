@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Focus Nazar",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Focus Nazar is a simple, lightweight Chrome Extension designed to manage your focus.",
     "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
     "icons": {
