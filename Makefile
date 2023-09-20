@@ -1,13 +1,15 @@
+VERSION_TAG := $(shell jq .version manifest.json | sed -r 's/\./_/g')
+
 run-docs:
 	http-server ./docs
 
 run-pre-build:
-	cp -R background_scripts dist/0_0_1/
-	cp -R content_scripts dist/0_0_1/
-	cp -R global_scripts dist/0_0_1/
-	cp -R icons dist/0_0_1/
-	cp -R popup dist/0_0_1/
-	cp -R manifest.json dist/0_0_1/manifest.json
+	cp -R background_scripts dist/$(VERSION_TAG)/
+	cp -R content_scripts dist/$(VERSION_TAG)/
+	cp -R global_scripts dist/$(VERSION_TAG)/
+	cp -R icons dist/$(VERSION_TAG)/
+	cp -R popup dist/$(VERSION_TAG)/
+	cp -R manifest.json dist/$(VERSION_TAG)/manifest.json
 
 run-pack: run-pre-build
-	cd dist/0_0_1 && zip -qr -9 -X ../../dist/focus_nazar_0_0_1.zip .
+	cd dist/$(VERSION_TAG) && zip -qr -9 -X ../../dist/focus_nazar_$(VERSION_TAG).zip .
