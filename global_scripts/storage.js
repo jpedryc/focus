@@ -30,6 +30,7 @@ const addOrUpdateRule = async (domain, time) => {
         ruleItemsObj.ruleItems.push({domain, time, timeInit: time, lastChange: Date.now()});
     } else {
         ruleItemsObj.ruleItems[existingItemId].time = time;
+        ruleItemsObj.ruleItems[existingItemId].timeInit = time;
         ruleItemsObj.ruleItems[existingItemId].lastChange = Date.now();
     }
 
